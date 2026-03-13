@@ -1,2 +1,12 @@
-FROM alpine
-CMD [ "echo", "hi iam seif , this is first treat with docker"]
+FROM node:latest
+
+WORKDIR /app
+
+COPY package.json .
+
+RUN npm i
+
+COPY . .
+EXPOSE 4000
+
+CMD [ "npm", "start" ]
