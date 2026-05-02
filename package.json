@@ -19,7 +19,8 @@
   "homepage": "https://github.com/seifelboghdady/train-docker-files#readme",
   "dependencies": {
     "express": "^5.2.1",
-    "mongoose": "^9.4.1"
+    "mongoose": "^9.4.1",
+    "redis": "^5.12.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
